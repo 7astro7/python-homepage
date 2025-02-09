@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}About{% endblock %}
+{% block content %}
+<h1>About Me</h1>
+<p>Hi, I'm Zak.</p>
+<p>I'm a quantitative developer focused on object-oriented programming.</p>
+<p> I'm currently working at Fortitude Reinsurance in Nashville, TN, where I focus on creating 
+    and maintaining cashflow stress testing support tools for the actuarial and capital management teams. 
+    I am also working on completing my Master's in Applied Data Analytics at Boston University.
+</p>
+<p>Here is my <a href="{{ url_for('static', filename='Zak_Kraehling_Resume.pdf') }}" download>resume</a>.</p>
+</p>
+<p><a href="{{ url_for('home') }}">Home</a></p>
+{% endblock %}

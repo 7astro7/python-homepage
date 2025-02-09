@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+
+<img src="{{ url_for('static', filename='tux.png') }}" alt="Profile Picture" class="profile-img fade-in">
+<h1 class="fade-in">Zak Kraehling</h1>
+<p class="fade-in">Quantitative Developer</p>
+
+<!-- Social Icons -->
+<p class="fade-in">
+    <a href="https://github.com/7astro7" target="_blank">GitHub</a> |
+    <a href="https://www.linkedin.com/in/zachary-kraehling-53a824143/" target="_blank">LinkedIn</a> |
+    <a href="mailto:zak@zakkraehling.net">Email</a>
+</p>
+
+<!-- Navigation Links -->
+<p class="fade-in">
+    <a href="{{ url_for('about') }}">About</a> |
+    <a href="{{ url_for('projects') }}">Projects</a>
+</p>
+
+{% endblock %}

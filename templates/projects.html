@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Projects{% endblock %}
+{% block content %}
+<h1>Projects</h1>
+<ul>
+    <li><a href="https://github.com/7astro7/full_fred" target="_blank">full_fred</a> - Full Python interface to Federal Reserve Economic Data (FRED) </li>
+    <li><a href="https://github.com/7astro7/bitcoin-network-tools" target="_blank">bitcoin-network-tools</a> - A tool to analyze the Bitcoin blockchain network </li>
+    <li><a href="https://github.com/7astro7/python-homepage" target="_blank">python-homepage</a> - Python homepage built using Flask</li>
+</ul>
+<p><a href="{{ url_for('home') }}">← Back to Home</a></p>
+{% endblock %}
